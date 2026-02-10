@@ -1,0 +1,15 @@
+services:
+  node-api:
+    build: ./services/node-api
+    ports:
+      - "13001:3000"
+
+  python-api:
+    build: ./services/python-api
+    ports:
+      - "15001:5000"
+
+  go-api:
+    build: ./services/go-api
+    ports:
+      - "18081:8080"
